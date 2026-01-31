@@ -1,0 +1,261 @@
+
+
+  /* FLEX-BOX HELPER ------------------ 
+
+div {
+    border: 1px dotted var(--a2midgray);
+}
+
+    /* FLEX-BOX HELPER END --------------- */
+
+body::-webkit-scrollbar{
+    display: none; 
+} 
+
+
+#infinite-scroll-container{
+    position: relative;
+    height: 100%;
+    margin-bottom: 40px;
+    padding: 0px 80px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior: contain;
+
+    -webkit-overflow-scrolling: none;
+    overscroll-behavior: none; 
+    scrollbar-width: none;
+    
+
+}
+
+#infinite-scroll-container > div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+#infinite-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.slides{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 100px;
+
+}
+
+
+.duplicate{
+    overflow: hidden;
+    height: calc(100dvh - 160px);
+}
+
+.list-element{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+
+    text-transform: uppercase;
+    line-height: 1em;
+
+    transition: all 0.15s ease;
+
+}
+
+
+.list-info > img{
+    height: 80px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.15s ease;
+    border-radius: 4px;
+}
+
+
+
+.list-ident{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    column-gap: 80px;
+
+
+}
+
+.list-number{
+    text-align: left;
+    width: 100px;
+}
+.list-title{
+    font-size: 48px;
+    line-height: 1em;
+
+
+}
+
+.list-info{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    column-gap: 40px;
+ 
+}
+
+.list-cat{
+    text-align: right;
+    width: 90px;
+}
+
+.list-year{
+    text-align: right;
+    width: 90px;
+}
+
+.list-element:hover{
+    color: var(--thered);
+}
+
+.list-element:hover > div > img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+@media only screen and (max-height: 900px) {
+
+}
+
+@media only screen and (min-height: 1000px) {
+
+}
+
+@media only screen and (min-height: 1100px) {
+
+}
+
+@media only screen and (min-height: 1200px) {
+
+}
+
+@media only screen and (min-height: 1300px) {
+
+}
+
+@media only screen and (min-height: 1400px) {
+
+}
+
+
+
+/* 1300px I SUCK AT RESPONSIVE*/
+
+
+
+@media only screen and (max-width: 1400px) {
+    
+}
+
+@media only screen and (max-width: 1200px) {
+
+.list-title{
+    font-size: 36px;
+} 
+.list-info{
+    font-size: 18px;
+}
+
+.list-year{
+    width: 75px;
+    text-wrap: nowrap;
+}
+
+.list-number{
+    text-wrap: nowrap;
+}
+.list-info > img{
+    height: 60px;
+    border-radius: 3px;
+}
+
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    #infinite-scroll-container{
+        padding: 0px 0px;
+    }
+
+    .duplicate{
+        height: calc(100dvh - 120px);
+    }
+
+    .list-cat{
+        display: none;
+    }
+    .list-year{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+#infinite-scroll-container > div{
+
+    row-gap: 50px;
+}
+
+.slides{
+
+    row-gap: 50px;
+
+}
+
+.list-number{
+    width: auto;
+}
+
+.list-ident{
+    column-gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.list-info{
+    column-gap: 0px;
+    row-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+
+}
+
+@media only screen and (max-width: 565px) {
+
+}
+
+@media only screen and (max-width: 470px) {
+
+}
+
+@media only screen and (max-width: 375px) {
+.list-title{
+    font-size: 28px;
+}
+
+}
+
+@media only screen and (max-width: 321px) {
+
+}

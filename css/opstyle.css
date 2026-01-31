@@ -1,0 +1,336 @@
+
+
+
+
+
+  /* FLEX-BOX HELPER ------------------ 
+
+div {
+    border: 1px dotted #a2a2a25c;
+}
+
+    /* FLEX-BOX HELPER END --------------- */    
+
+    body::-webkit-scrollbar{
+        display: none; 
+    } 
+    
+    
+    #p-wrapper{
+        position: relative;
+        height: calc(100dvh - 320px);
+        margin: 0px 160px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        overscroll-behavior: contain;
+    
+        -webkit-overflow-scrolling: none;
+        overscroll-behavior: none; 
+        scrollbar-width: none;
+        border-radius: 10px;
+        
+    }
+    
+    #p-wrapper > div{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    
+    #p-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .duplicate{
+        overflow: hidden;
+        height: calc(100dvh - 320px);
+    }
+
+
+
+.behance-btn{
+    width: 80px;
+    height: 30px;
+    padding-bottom: 1px ;
+    font-size: 14px;
+}
+
+.project-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 180px;
+    padding: 20px 0px;
+
+}
+
+.project-info-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+
+}
+
+.project-title-box{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: auto;
+}
+
+.project-year{
+    font-size: 16px;
+    line-height: 0.9em;
+    margin-bottom: 5px;
+}
+
+.project-title{
+    font-size: 50px;
+    line-height: 0.9em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.concept-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: right;
+    align-items: end;
+    row-gap: 25px;
+    width: 50%;
+}
+
+.concept-text{
+    width: 100%;
+    line-height: 1.3em;
+    font-size: 16px;
+    text-wrap: pretty;
+    hyphens: auto;
+}
+.madeat{
+    font-size: 12px;
+    line-height: 1em;
+    font-style: italic;
+    display: none;
+}
+
+.mbc-cont{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    pointer-events: none;
+    
+}
+
+.move-between-projects{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 1em;
+    height: 0px;
+    top: calc( 110px + ( (100dvh - 320px) / 2));
+    position: absolute;
+    padding: 0px 40px;
+
+ 
+}
+
+.move-between-projects > a{
+    pointer-events: all;
+}
+
+.move-between-projects > div:hover{
+    color: var(--thered);
+    cursor: pointer;
+}
+.p-loop{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 50px;
+}
+.p-loop img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-height: 900px) and (min-width: 1930px) {
+
+}
+@media only screen and (min-height: 1000px) and (min-width: 1930px) {
+
+}
+@media only screen and (min-height: 1100px) and (min-width: 1930px) {
+
+}
+@media only screen and (min-height: 1170px) and (min-width: 1930px) {
+
+}
+@media only screen and (min-height: 1300px) and (min-width: 1930px) {
+
+}
+@media only screen and (min-height: 1360px) and (min-width: 1930px) {
+
+}
+
+
+
+/* 1300px I SUCK AT RESPONSIVE*/
+
+
+
+@media only screen and (max-width: 1440px) {  
+
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .concept-text{
+        font-size: 14px;
+        width: 50vw;
+    }
+
+    .behance-btn{
+        width: 100px;
+    }
+    
+    .project-info-box{
+        padding: 0px 0px;
+    }
+
+    .move-between-projects{
+        font-size: 14px;
+        top: calc( 70px + ( (100dvh - 280px) / 2));
+        padding: 0px 20px;
+    }
+    
+    #p-wrapper{
+        height: calc(100dvh - 280px);
+        margin: 0px 80px;
+    }
+    .duplicate{
+        height: calc(100dvh - 280px);
+    }
+
+    .project-bottom{
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .project-title{
+        font-size: 36px;
+    }
+
+
+    .move-between-projects{
+        font-size: 14px;
+        top: calc( 95px +  (100dvh - 280px - 60px));
+        padding: 0px 20px;
+    }
+    
+    #p-wrapper{
+        height: calc(100dvh - 280px - 60px);
+        margin: 0px 0px;
+    }
+    .duplicate{
+        height: calc(100dvh - 280px - 60px);
+    }
+
+    .project-info-box{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .project-info-box > div{
+        width: 100%;
+    }
+
+    .concept-text{
+        width: 100%;    
+    }
+
+    .project-bottom{
+        padding: 40px 0px 0px 0px;
+        height: 240px;
+        justify-content: start;
+        
+    }
+
+    #p-wrapper> div{
+        row-gap: 20px;
+    }
+
+    .p-loop{
+        row-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+}
+
+@media only screen and (max-width: 475px) {
+    .project-title{
+        font-size: 30px;
+    }
+
+    .project-year{
+        font-size: 13px;
+    }
+    .move-between-projects{
+        font-size: 14px;
+        top: calc( 95px + ( (100dvh - 180px - 120px)));
+        padding: 0px 20px;
+    }
+    
+    #p-wrapper{
+        height: calc(100dvh - 180px - 120px);
+        margin: 0px 0px;
+    }
+    .duplicate{
+        height: calc(100dvh - 180px - 120px);
+    }
+
+    .project-info-box{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .project-info-box > div{
+        width: 100%;
+    }
+
+    .concept-text{
+        width: 100%;    
+    }
+
+    .project-bottom{
+        padding: 40px 0px 0px 0px;
+        height: 200px;
+        justify-content: start;
+        
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 325px) {
+
+}
